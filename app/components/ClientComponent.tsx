@@ -30,13 +30,13 @@ const ClientComponent = ({ data }: ClientComponentProps) => {
   const isMobile = useMediaQuery('(max-width:768px)');
 
 
-  const Title = language === 'JP' ? "こんにちは、私は馬偉堅（マ・ワイギン）ですが、Kenjiとも呼んでください。" 
-    : language === 'HK' ? "你好，我叫馬偉堅，你可以叫我 Kenji。歡迎來到我的個人開發博客！" 
-    : "Hi, I’m Wai Kin Ma, also known as Kenji.";
+  const Title = language === 'JP' ? "こんにちは、Kenjiと申します。創造的な発想を活かして活動する、ゲームおよびAR開発者です。" 
+    : language === 'HK' ? "你好，我係 Kenji，一位擁有創意思維的遊戲及 AR 開發者。" 
+    : "Hi, I'm Kenji — a Game & AR Developer with a creative mindset.";
   
-  const Description = language === 'JP' ? "ゲーム開発とウェブ開発を専門とするプロフェッショナルです。AR（拡張現実）、UIデザイン、エフェクトデザインの分野にも精通しています。このブログでは、これらの分野での経験や学習ノートを共有し、技術に対する情熱と専門知識をお見せします。私のスキルや背景を理解し、どのように価値を創造できるかを知っていただければと思います。" 
-    : language === 'HK' ? "我是一名專注於遊戲開發和網站開發的專業開發者。我的專業領域涵蓋了AR增強現實、UI設計和效果設計。在這個博客中，我會分享我在這些領域中的經驗和學習筆記，展示我對技術的熱情和專業知識。希望通過這些內容，你能夠更好地了解我的技能和背景，並探索我如何在這些領域中創造價值。" 
-    : "I’m a professional developer specializing in game development and web development. My expertise includes AR augmented reality, UI design, and effect design. On this blog, I’ll share my experiences and learning notes in these fields, showcasing my passion for technology and professional knowledge. I hope these insights will give you a better understanding of my skills and background and how I can create value in these areas.";
+  const Description = language === 'JP' ? "ユーザー体験と物語性を重視するクリエイティブ開発者です。 Unity や AR 技術をベースに、ビジュアルとインタラクションの融合を追求しています。 このブログでは、自作プロジェクトや開発プロセス、設計における思考を共有しています。" 
+    : language === 'HK' ? "我是一位注重創意與互動體驗的開發者，專注於遊戲機制設計與使用者導向的開發思維。 擁有 Unity 與 AR 開發背景，持續探索視覺表達與技術落地之間的平衡。 本 Blog 將記錄我在遊戲與 Web 技術領域的開發歷程與構思過程。" 
+    : "I'm a creative developer passionate about game mechanics, immersive interaction, and user-centered design. With a background in Unity and AR development, I explore the balance between visual storytelling and technical implementation.This blog is where I share my thought process, personal projects, and development experiences in game and web technologies.";
     
 
     const [selectedType, setSelectedType] = useState('all');
@@ -45,12 +45,12 @@ const ClientComponent = ({ data }: ClientComponentProps) => {
     const [isLoading, setIsLoading] = useState(false);
 
     const handleCardClick = (slug: string) => {
-      setIsAnimating(true); // 开始动画
-      setDestination(`/blog/${slug}?lang=${language}`); // 设置目标路径
+      setIsAnimating(true); 
+      setDestination(`/blog/${slug}?lang=${language}`); 
     };
 
     useEffect(() => {
-      // 当 selectedType 改变时，触发加载状态
+     
       setIsLoading(true);
   
       const timeoutId = setTimeout(() => {
@@ -60,7 +60,7 @@ const ClientComponent = ({ data }: ClientComponentProps) => {
         
         setFilteredData(newFilteredData);
         setIsLoading(false);
-      }, 500); // 模拟加载时间
+      }, 500);
   
       return () => clearTimeout(timeoutId);
     }, [selectedType]);
@@ -70,9 +70,9 @@ const ClientComponent = ({ data }: ClientComponentProps) => {
       if (destination) {
         const timeout = setTimeout(() => {
           window.location.href = destination;
-        }, 100); // 等待动画完成后进行导航
+        }, 100); 
   
-        return () => clearTimeout(timeout); // 清理超时
+        return () => clearTimeout(timeout);
       }
     }, [destination]);
 
