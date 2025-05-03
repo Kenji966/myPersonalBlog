@@ -32,11 +32,11 @@ const ClientComponent = ({ data }: ClientComponentProps) => {
 
   const Title = language === 'JP' ? "こんにちは、Kenjiと申します。創造的な発想を活かして活動する、ゲームおよびAR開発者です。" 
     : language === 'HK' ? "你好，我係 Kenji，一位擁有創意思維的遊戲及 AR 開發者。" 
-    : "Hi, I'm Kenji — a Game & AR Developer with a creative mindset.";
+    : "Hi, I’m Kenji — a Unity-based Game & AR Developer with a prototype mindset.";
   
   const Description = language === 'JP' ? "ユーザー体験と物語性を重視するクリエイティブ開発者です。 Unity や AR 技術をベースに、ビジュアルとインタラクションの融合を追求しています。 このブログでは、自作プロジェクトや開発プロセス、設計における思考を共有しています。" 
     : language === 'HK' ? "我是一位注重創意與互動體驗的開發者，專注於遊戲機制設計與使用者導向的開發思維。 擁有 Unity 與 AR 開發背景，持續探索視覺表達與技術落地之間的平衡。 本 Blog 將記錄我在遊戲與 Web 技術領域的開發歷程與構思過程。" 
-    : "I'm a creative developer passionate about game mechanics, immersive interaction, and user-centered design. With a background in Unity and AR development, I explore the balance between visual storytelling and technical implementation.This blog is where I share my thought process, personal projects, and development experiences in game and web technologies.";
+    : "I design interactive systems with gameplay logic, visual feedback, and user rhythm in mind. This blog is where I share my thoughts, technical experiments, and creative processes across game mechanics, real-time VFX, and AR interfaces — all developed with a hands-on, iterative approach.";
     
 
     const [selectedType, setSelectedType] = useState('all');
