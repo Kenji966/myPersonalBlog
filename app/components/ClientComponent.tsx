@@ -30,12 +30,12 @@ const ClientComponent = ({ data }: ClientComponentProps) => {
   const isMobile = useMediaQuery('(max-width:768px)');
 
 
-  const Title = language === 'JP' ? "こんにちは、Kenjiと申します。創造的な発想を活かして活動する、ゲームおよびAR開発者です。" 
-    : language === 'HK' ? "你好，我係 Kenji，一位擁有創意思維的遊戲及 AR 開發者。" 
+  const Title = language === 'JP' ? "こんにちは、Kenjiと申します。Unity を軸に、ゲームと AR 体験のプロトタイプ開発に取り組んでいます。" 
+    : language === 'HK' ? "你好，我係 Kenji 一位以 Unity 為核心、專注於遊戲與 AR 體驗開發的原型創作者。" 
     : "Hi, I’m Kenji — a Unity-based Game & AR Developer with a prototype mindset.";
   
-  const Description = language === 'JP' ? "ユーザー体験と物語性を重視するクリエイティブ開発者です。 Unity や AR 技術をベースに、ビジュアルとインタラクションの融合を追求しています。 このブログでは、自作プロジェクトや開発プロセス、設計における思考を共有しています。" 
-    : language === 'HK' ? "我是一位注重創意與互動體驗的開發者，專注於遊戲機制設計與使用者導向的開發思維。 擁有 Unity 與 AR 開發背景，持續探索視覺表達與技術落地之間的平衡。 本 Blog 將記錄我在遊戲與 Web 技術領域的開發歷程與構思過程。" 
+  const Description = language === 'JP' ? "このブログでは、ゲームロジック、視覚的なフィードバック、操作のリズムを重視したインタラクティブシステムの設計を通して、私の思考プロセスや技術的な試行錯誤、創作の過程を共有しています。全ては「手を動かしながら考える」実践的なアプローチで構築されています。" 
+    : language === 'HK' ? "我設計的互動系統強調遊玩邏輯、視覺回饋與操作節奏。這個 Blog 記錄了我在遊戲機制、即時特效、AR 介面等範疇中的技術實驗與創意過程 —— 所有內容皆來自於實作中的反覆調整與直覺驅動的探索。" 
     : "I design interactive systems with gameplay logic, visual feedback, and user rhythm in mind. This blog is where I share my thoughts, technical experiments, and creative processes across game mechanics, real-time VFX, and AR interfaces — all developed with a hands-on, iterative approach.";
     
 
