@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js + Sanity CMS Developer Blog
 
-## Getting Started
+A multilingual, developer-focused blog platform built with Next.js and Sanity CMS.  
+Supports dynamic content, code syntax highlighting, animations, and multi-language posts.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Built with Next.js:**  
+  Modern, fast, and SEO-friendly React-based web framework.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Sanity CMS Integration:**  
+  Real-time headless CMS backend for flexible content management and live editing.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Multilingual Support:**  
+  Easy authoring and display of posts in multiple languages (Chinese, Japanese, English).
 
-## Learn More
+- **Dynamic Routing:**  
+  Automatic page generation for posts, categories, and tag-based archives.
 
-To learn more about Next.js, take a look at the following resources:
+- **Developer Experience:**  
+  Markdown/code block rendering, blog post scheduling, animated UI, and dark mode.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Custom Design:**  
+  Tailored layout with support for images, code, and responsive content.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Code Highlights
+- **Written in TypeScript (optional), with modular components.**  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Uses Next.js dynamic routing, ISR/SSG, and custom API integration.**  
+
+- **CMS-powered: Add/edit posts instantly via Sanity Studio.**  
+
+- **Includes custom code highlight, animation, and responsive design.**  
+
+---
