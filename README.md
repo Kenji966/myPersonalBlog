@@ -29,7 +29,7 @@ Supports dynamic content, code syntax highlighting, animations, and multi-langua
 
 
 ## Code Highlights
-- **Written in TypeScript (optional), with modular components.**  
+- **Written in TypeScript, with modular components.**  
 
 - **Uses Next.js dynamic routing, ISR/SSG, and custom API integration.**  
 
