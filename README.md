@@ -20,7 +20,7 @@ Supports dynamic content, code syntax highlighting, animations, and multi-langua
   Automatic page generation for posts, categories, and tag-based archives.
 
 - **Developer Experience:**  
-  Markdown/code block rendering, blog post scheduling, animated UI, and dark mode.
+  Blog post scheduling, animated UI, and dark mode.
 
 - **Custom Design:**  
   Tailored layout with support for images, code, and responsive content.
